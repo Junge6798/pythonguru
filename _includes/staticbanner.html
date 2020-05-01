@@ -1,0 +1,58 @@
+<section class="static-banner bg-dark py-4">
+  <div class="container">
+    <div class="row wow fadeInUp mt-3">
+      <img src="/assets/img/lang.png" class="lang-logo" alt="loading ..." />
+    </div>
+    <div class="row wow fadeInUp mt-3">
+      <div class="text-center m-auto">
+        <h1 class="caption">Welcome to <span class="sm-block">{{ site.title }}</span></h1>
+        <h3 class="tagline">
+          {{ site.data.siteinfo.tagline }}
+        </h3>
+        <p class="text-white">
+          ( Self-learning is the best learning approach )
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="welcome-message py-5">
+  <div class="container">
+    <div class="row wow fadeInUp">
+      <div class="col-md-12">
+        <div class="text-center m-auto">
+          <h1 class="main-text">
+            Begin your <span class="site-color lang-name sm-block">{{ site.lang | capitalize }}</span> Journey
+            <br>with <span class="guru-name site-color sm-block">{{ site.lang | capitalize }}Guru</span>
+          </h1>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="encourage-text text-center m-auto">
+          <p>
+            {{ site.lang | capitalize }} is created by
+            <a href="https://en.wikipedia.org/wiki/Guido_van_Rossum" target="_blank">
+              Guido van Rossum
+            </a> around the year 1989.<br>
+            It has been said that during 1989 Christmas holidays, Guido Van had lot of<br>
+            free time and he decided to give a try to write an <i>interpreter</i><br>
+            he had been thinking lately as a descendant of ABC language that would appeal<br>
+            to Unix/C hackers.<br>
+            Interestingly, he gave the name to that language as <b>{{ site.lang | capitalize }}</b>
+            after the British comedy group <b>Monty Python</b>.
+
+            <br><br>
+
+            Click the button below to discover its power.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="/toc" class="btn btn-primary px-6 py-3 active mb-3" role="button" aria-pressed="true">
+        Let's Begin the {{ site.lang | capitalize }} Journey
+      </a>
+    </div>
+  </div>
+</section>

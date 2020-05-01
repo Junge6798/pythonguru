@@ -1,0 +1,157 @@
+.home-section {
+  margin-top: 64px;
+}
+
+.section-padding {
+  padding: 80px 0px;
+}
+
+.navbar {
+  .navbar-brand {
+    .title {
+      color: yellow;
+      line-height: 1;
+      font-size: 25px;
+      font-family: 'Jacques Francois Shadow', cursive;
+    }
+  }
+}
+
+.site-color {
+  color: "{{ site.color }}";
+}
+
+.lang-logo {
+  height: 165px;
+  width: 150x;
+  margin: auto;
+}
+
+#TableOfContents #TOC {
+  a.md-nav__link {
+    color: #333;
+    font-size: 18px;
+  }
+  a.md-nav__link.nav-h2 {
+    color: #666;
+    font-size: 16px;
+  }
+  a.md-nav__link.nav-h3 {
+    color: #888;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+.td-content {
+  p {
+    color: #666;
+  }
+  blockquote p {
+    color: #999;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  ul li {
+    color: #666;
+    font-size: 15px;
+  }
+}
+
+.static-banner {
+  background-color: #eee;
+
+  .caption {
+    font-family: 'Jacques Francois Shadow', cursive;
+    color: #fff;
+  }
+  .tagline {
+    color: yellow;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Gotu', sans-serif;
+  }
+}
+
+.welcome-message {
+  .main-text {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  .lang-name {
+    font-weight: 600;
+  }
+  .guru-name {
+    font-weight: 800;
+    // font-size: 2.7em;
+  }
+}
+
+.encourage-text {
+  p {
+    font-size: 18px;
+  }
+}
+
+.btn.active:focus {
+  box-shadow: none !important;
+}
+
+.td-content>h2:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  font-size: 25px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.credits {
+  a {
+    font-size: 13px;
+  }
+}
+
+// footer css
+.footer-section {
+  background: #595959;
+
+  .footer-text {
+    font-size: 30px;
+    color: #fff;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Jacques Francois Shadow', cursive;
+    text-decoration: none;
+  }
+  .footer-tagline {
+    color: yellow;
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Gotu', sans-serif;
+  }
+  .footer-social {
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+.copyright {
+  background: #333;
+  color: #fff;
+  padding: 5px 0;
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 11px;
+
+    a {
+      text-decoration: none;
+      color: yellow;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<header>
+  <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <span class="title text-uppercase font-weight-bold" style="{% if page.permalink == '/' %}display:none;{% endif %}">{{ site.title }}</span>
+  	</a>
+	  <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+      <ul class="navbar-nav mt-2 mt-lg-0">
+        <li class="nav-item nav-item mr-4 mb-2 mb-lg-0 {% if page.page_name == 'home' %}active{% endif %}">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item nav-item mr-4 mb-2 mb-lg-0 {% if page.page_name == 'about' %}active{% endif %}">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item nav-item mr-4 mb-2 mb-lg-0 {% if page.page_name == 'blogs' %}active{% endif %}">
+          <a class="nav-link" href="/toc">TOC</a>
+        </li>
+        <li class="nav-item nav-item mr-4 mb-2 mb-lg-0 {% if page.page_name == 'blogs' %}active{% endif %}">
+          <a class="nav-link" href="https://brgtrainings.com/">BRGTrainings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+

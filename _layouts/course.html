@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<div class="container-fluid td-outer">
+  <div class="td-main">
+    <div class="row flex-xl-nowrap">
+      <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+        {% include sidebar.html %}
+      </div>
+
+      <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+        <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+            {% include editable.html %}
+        </div>
+        <nav id="TableOfContents">
+          <ul>
+            <li>
+              <ul id="TOC">
+                <!-- Links will be appended here-->
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="col-12 col-md-9 col-xl-8 px-md-5" role="main">
+        <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+          <ol class="breadcrumb spb-1">
+            <li class="breadcrumb-item active" aria-current="page">
+              {% if page.parent %}
+                <a href="{{ site.url }}{{ site.baseurl }}{{ page.parent }}">
+                  {{ page.parent  | remove: "/toc" | remove: "/" | replace: "-", " " | capitalize }}
+                </a>
+                <i class="fas fa-chevron-right ml-1"></i>
+              {% endif %}
+              <a href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove: 'index' }}">
+                {{ page.title }}
+              </a>
+            </li>
+          </ol>
+        </nav>
+        <div class="td-content">
+
+          {{ content }}
+
+          {% if page.prev_link %}
+            <a href="{{ page.prev_link }}" class="btn btn-primary px-4 mr-5" role="button"><i class="fas mr-2 fa-backward"></i>Previous</a>
+          {% endif %}
+          {% if page.next_link %}
+            <a href="{{ page.next_link }}" class="btn btn-primary px-4" role="button">Next <i class="fas ml-1 fa-forward"></i></a>
+          {% endif %}
+
+          {% include feedback.html %}
+
+          {% if page.credits %}
+            <div class="credits bg-light-gray py-2 px-4 mt-3">
+              <ul class="mb-0"> <b>Credits:</b>
+              {% for source in page.credits %}
+                {% assign tokens = source | split: ", " %}
+                <li><a href="{{ tokens[1] }}" target="_blank">{{ tokens[0] }}</a></li>
+              {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
+      </main>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</div>
