@@ -5,6 +5,12 @@
     </div>
   </blockquote>
   {% if include.quote_by %}
-    <div class="attribution">— {{ include.quote_by }}</div>
+    <div class="attribution">
+      — {{ include.quote_by }}
+      {% if include.source %}
+        <a href="{{ include.source }}" target="_blank">(source)</a>
+      {% endif %}
+    </div>
   {% endif %}
+
 </div>

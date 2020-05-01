@@ -43,6 +43,11 @@
     border-left: 1px solid #ddddd8;
     color: rgba(0,0,0,.6);
     font-size: 1.0625rem;
+    font-style: italic;
+
+    a {
+      color: #333;
+    }
   }
 }
 .util-quote {
@@ -78,5 +83,9 @@
     font-style: italic;
     text-align: right;
     margin-right: 20px;
+
+    a {
+      color: #777;
+    }
   }
 }

@@ -7,7 +7,7 @@ tags:
 description: Interactive Python - REPL
 permalink: /toc/section-one/repl/
 prev_link: /toc/section-one/hello-world/
-next_link: /toc/section-two/
+# next_link: /toc/section-two/
 ---
 
 # Interactive Python - REPL

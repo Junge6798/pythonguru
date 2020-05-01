@@ -15,6 +15,11 @@ Here you can quickly jump to a particular section.
     icon_class="fa icon-note"
 %}
 
+{% include notice.html
+    primary="The content of the syllabus is still in building stage."
+    secondary="However, you can still begin your learning."
+%}
+
 <div class="section-index">
   <hr class="panel-line">
   {% for page in site.toc %}

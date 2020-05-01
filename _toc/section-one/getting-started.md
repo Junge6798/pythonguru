@@ -89,7 +89,7 @@ the `Windows x86 executable installer` and run it.
 
 Consider Windows section from [`Python 3 Installation & Setup Guide`](https://realpython.com/installing-python/#windows){:target="_blank"} for more details.
 
-## Install Ruby in macOS
+## Install Python in macOS
 
 The recommended way to install Python in macOS is through [`Homebrew package manager`](https://brew.sh/){:target="_blank"}.
 

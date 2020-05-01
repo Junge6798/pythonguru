@@ -7,7 +7,7 @@ tags:
 description: Hello World program in Python
 permalink: /toc/section-one/hello-world/
 prev_link: /toc/section-one/features/
-next_link: /toc/section-one/irb/
+next_link: /toc/section-one/repl/
 ---
 
 # Hello World Program
